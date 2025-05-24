@@ -1,0 +1,11 @@
+name: First Workflow
+
+on: [push]
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Say Hello
+        run: echo "Hello, GitHub Actions!"
